@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import userModule from './../modules/user/user.module.js';
+import userModule from '$src/modules/user/index.';
 
 const siteRoute = Router();
 siteRoute.post('/', userModule.create);

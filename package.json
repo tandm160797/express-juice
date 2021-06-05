@@ -5,11 +5,11 @@
 	"author": "Tan Dang <tandm160797@gmail.com>",
 	"license": "MIT",
 	"scripts": {
-		"dev": "nodemon -q -x 'node ./src/utils/clearConsole.js && node -r dotenv/config ./src/index.js dotenv_config_path=./.env'",
+		"dev": "nodemon -q -x 'babel-node ./src/utils/clearConsole.js && babel-node -r dotenv/config ./src/index.js dotenv_config_path=./.env'",
 		"build": "babel ./src -d ./dist",
 		"start": "node .",
 		"node-sass": "node-sass -w --output-style compressed ./src/resources/scss -o ./public/assets/css",
-		"pretty": "prettier --write \"./**/*.{js,json}\""
+		"pretty": "prettier --write './**/*.{js,json}'"
 	},
 	"dependencies": {
 		"bcryptjs": "^2.4.3",
@@ -29,12 +29,14 @@
 	"devDependencies": {
 		"@babel/cli": "^7.14.3",
 		"@babel/core": "^7.14.3",
+		"@babel/node": "^7.14.2",
+		"@babel/plugin-transform-runtime": "^7.14.3",
 		"@babel/preset-env": "^7.14.2",
+		"babel-plugin-module-resolver": "^4.1.0",
 		"dotenv": "^10.0.0",
 		"morgan": "^1.10.0",
 		"node-sass": "^6.0.0",
 		"nodemon": "^2.0.7",
 		"prettier": "^2.3.0"
-	},
-  "type": "module"
+	}
 }

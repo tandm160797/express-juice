@@ -1,5 +1,5 @@
 const createValidator = (req, res, next) => {
-	console.log('1-validator');
+	console.log('Validator');
 	next();
 };
 

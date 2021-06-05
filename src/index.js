@@ -2,11 +2,11 @@ import colors from 'colors';
 import compression from 'compression';
 import express from 'express';
 import path from 'path';
-import mongoDB from './common/mongoDB.js';
-import errorHandler from './middlewares/errorHandler.js';
-import logger from './middlewares/logger.js';
-import router from './routes/router.js';
-import { isDevelopment } from './utils/index.js';
+import mongoDB from '$common/mongoDB';
+import errorHandler from '$middlewares/errorHandler';
+import logger from '$middlewares/logger';
+import router from '$src/routes';
+import { isDevelopment } from '$utils';
 
 (async () => {
 	const app = express();

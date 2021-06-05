@@ -1,7 +1,7 @@
 import path from 'path';
 import swaggerJsDoc from 'swagger-jsdoc';
 import swaggerUI from 'swagger-ui-express';
-import { isDevelopment } from './../utils/index.js';
+import { isDevelopment } from '$utils';
 
 const servers = isDevelopment ? [`${process.env.HOST}:${process.env.PORT}`] : [`${process.env.HOST}`];
 

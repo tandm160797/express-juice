@@ -1,5 +1,5 @@
-import { verifyToken } from './../common/jwt';
-import { handleJWTErrorMessage } from './../utils/handle-jwt-error-message';
+import { verifyToken } from '$common/jwt';
+import { handleJWTErrorMessage } from '$utils/handle-jwt-error-message';
 
 const authentication = async (request, response, next) => {
 	let jwtAccessToken = request.headers.authorization;

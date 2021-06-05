@@ -1,7 +1,7 @@
 const createTransport = (req, res, next) => {
-	console.log('2-transport');
+	console.log('1-transport');
 	// Handle logic
-	return next();
+	next();
 };
 
 export default createTransport;
