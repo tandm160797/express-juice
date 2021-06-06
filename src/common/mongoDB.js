@@ -1,6 +1,6 @@
 import colors from 'colors';
 import Mongoose from 'mongoose';
-import { isDevelopment } from './../utils/index.js';
+import { isDevelopment } from '$utils';
 
 const mongoDB = {
 	connect: async () => {

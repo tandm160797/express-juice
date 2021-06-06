@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import siteModule from './../modules/site/site.module.js';
+import siteModule from '$src/modules/site';
 
 const siteRoute = Router();
 siteRoute.get('/', siteModule.index);

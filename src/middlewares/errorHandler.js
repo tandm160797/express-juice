@@ -1,7 +1,7 @@
 import path from 'path';
 import winston from 'winston';
-import { isDevelopment } from './../utils/index.js';
-import { errorResponses } from './../common/responses.js';
+import { isDevelopment } from '$utils';
+import { errorResponses } from '$common/responses';
 
 const level = () => {
 	return isDevelopment ? 'debug' : 'warn';

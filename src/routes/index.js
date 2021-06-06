@@ -1,7 +1,7 @@
 import cors from 'cors';
-import siteRoute from './site.route.js';
-import userRoute from './user.route.js';
-import swagger from './../swaggers/swagger.js';
+import siteRoute from '$routes/site.route';
+import userRoute from '$routes/user.route';
+import swagger from '$swaggers';
 
 const router = (app) => {
 	app.use(cors());

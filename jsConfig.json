@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "$src/*": ["src/*"],
+      "$utils/*": ["src/utils/*"],
+      "$common/*": ["src/common/*"],
+      "$routes/*": ["src/routes/*"],
+      "$modules/*": ["src/modules/*"],
+      "$swaggers/*": ["src/swaggers/*"],
+      "$resources/*": ["src/resources/*"],
+      "$middlewares/*": ["src/middlewares/*"]
+    }
+  }
+}
